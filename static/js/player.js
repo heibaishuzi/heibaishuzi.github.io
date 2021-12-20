@@ -40,16 +40,16 @@ class Musics {
                         fileName: user_music_list[i],
                         title: user_music_list[i].split("-")[1].split(".")[0],
                         singer: user_music_list[i].split("-")[0],
-                        songUrl: 'https://cdn.jsdelivr.net/gh/MusicSharing/music@latest/songs/' + user_music_list[i],
-                        imageUrl: 'https://musicsharing.github.io/static/music_data/images/' + bgp[Math.floor(Math.random() * bgp.length)]
+                        songUrl: 'https://cdn.jsdelivr.net/gh/heibaishuzi/music@latest/songs/' + user_music_list[i],
+                        imageUrl: 'https://heibaishuzi.github.io/static/music_data/images/' + bgp[Math.floor(Math.random() * bgp.length)]
                     })
                 } else {
                     song_data.push({
                         fileName: user_music_list[i],
                         title: user_music_list[i].split(".")[0],
                         singer: "未知",
-                        songUrl: 'https://cdn.jsdelivr.net/gh/MusicSharing/music@latest/songs/' + user_music_list[i],
-                        imageUrl: 'https://musicsharing.github.io/static/music_data/images/' + bgp[Math.floor(Math.random() * bgp.length)]
+                        songUrl: 'https://cdn.jsdelivr.net/gh/heibaishuzi/music@latest/songs/' + user_music_list[i],
+                        imageUrl: 'https://heibaishuzi.github.io/static/music_data/images/' + bgp[Math.floor(Math.random() * bgp.length)]
                     })
                 }
 
@@ -116,7 +116,7 @@ class PlayerCreator {
         this.song_list = $('.music__list_content');
         let _str = '';
         this.musics.songs.forEach((song, i) => {
-            _str += `<li class="music__list__item">${song.title} <a href="https://musicsharing.github.io/music/songs/${song.fileName}?raw=true" style="float:right;padding-right:12px">下载</a></li>`
+            _str += `<li class="music__list__item">${song.title} <a href="https://heibaishuzi.github.io/music/songs/${song.fileName}?raw=true" style="float:right;padding-right:12px">下载</a></li>`
         });
         this.song_list.html(_str);
     }
