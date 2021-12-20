@@ -2,4 +2,4 @@
 
 ## 静态听歌页面
 
-https://musicsharing.github.io/
+https://heibaishuzi.github.io/
